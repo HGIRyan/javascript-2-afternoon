@@ -15,7 +15,11 @@
 */
 
 //Code here
-
+var me ={
+  name:'Ryan',
+  age:19
+}
+me.name;
 
 
 ////////// PROBLEM 2 //////////
@@ -26,15 +30,23 @@
 */
 
 //Code here
+var favoriteThings = {
+  band:'alt' ,
+  food: 'pasketti',
+  person: 'sugandese',
+  book: '4 hour workweek by Tim Ferris',
+  movie: 'Transformers 1-8',
+  holiday: 'January 20th 2017',
 
-
+}
 
 /*
   After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 */
 
 //Code here
-
+favoriteThings.car = 'Acura RSX';
+favoriteThings.brand = 'American Eagle';
 
 
 /*
@@ -42,7 +54,8 @@
 */
 
 //Code here
-
+favoriteThings.food = 'Chicken Nuggets';
+favoriteThings.book = 'Harry Potter';
 
 
 ////////// PROBLEM 3 //////////
@@ -56,7 +69,12 @@
 */
 
 //Code here
+var backPack = {
 
+}
+var item = 'firstPocket';
+backPack['firstPocket'] = 'chapstick'
+backPack.color = 'Invisible'
 
 
 /*
@@ -65,7 +83,7 @@
 
 //Code here
 
-
+backPack.backPack
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -74,7 +92,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack)
 
 
 ////////// PROBLEM 4 //////////
@@ -97,18 +115,12 @@ var user2 = {
 */
 
 //Code Here
-
-
-
-
-
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
-
-
-
 
 
 
@@ -121,22 +133,29 @@ var user2 = {
 
 //Code Here
 
+var methodCollection = {
+
+}
 
 
-/*
-  Now add two methods (functions that are properties on objects) to your methodCollection object. 
-  One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console. 
-*/
+  // Now add two methods (functions that are properties on objects) to your methodCollection object. 
+  // One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console. 
+
 
 //Code Here
+methodCollection.alertHello = () => {
+   alert('hello')
+}
 
-
-
+methodCollection.logHello = () => {
+  console.log('hello')
+}
 /*
   Now call your alertHello and logHello methods.
 */
-
 //Code Here
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 
@@ -148,8 +167,13 @@ var user2 = {
 */
 
 //Code Here
-
-
+function makePerson(name,birth,ssn){
+  return newObj = {
+    name:name,
+    birthday:birth,
+    ssn:ssn,
+  }
+}
 
 ////////// PROBLEM 7 //////////
 
@@ -159,5 +183,11 @@ var user2 = {
 */
 
 //Code Here
-
+function makeCard(cardNumber,expirationDate,securityCode){
+  return creditCard = {
+    CardNumber:cardNumber,
+    ExpirationDate:expirationDate,
+    SecurityCode:securityCode,
+  }
+}
 
